@@ -2,7 +2,7 @@
 
 ## Task 1
 
-- Rename `dotenv` to `.env`
+- In the `src` folder, rename `dotenv` to `.env`
 - In the `.env` file, replace **your_db_URI_here** with the database URI from Wednesday's class
 
 ## Task 2
