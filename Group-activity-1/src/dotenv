@@ -1,3 +1,0 @@
-MONGODB_URI=your_db_URI_here
-PORT=4000
-SESS_SECRET=secret

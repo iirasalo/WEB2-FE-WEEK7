@@ -15,7 +15,7 @@ router.get("/signup", (req, res) => res.render("auth/signup"));
 router.post("/signup", (req, res, next) => {
   // console.log("The form data: ", req.body);
 
-  const { username, email, password } = req.body;
+  const { firstname, lastname, phonenumber, username, email, password } = req.body;
 
   bcryptjs
     .genSalt(saltRounds)
@@ -23,6 +23,9 @@ router.post("/signup", (req, res, next) => {
     .then((hashedPassword) => {
       return User.create({
         // username: username
+        firstname, 
+        lastname, 
+        phonenumber,
         username,
         email,
         // passwordHash => this is the key from the User model
